@@ -1,5 +1,13 @@
 <h2>List details</h2>
 
+<%# <ul>
+  <% @list.each do |l| %>
+  <%# <li><%= l.bookmarks.comment %></li>
+  <%# <% end %>
+<%# </ul> %> 
 
 
+<br>
+<%= link_to 'Add a Bookmark', new_list_bookmark_path(@list) %>
+<br>
 <%= link_to 'Back to Lists', lists_path %>
