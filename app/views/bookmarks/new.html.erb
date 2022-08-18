@@ -1,6 +1,7 @@
-<h2>Bookmarks#new</h2>
 
-<%= simple_form_for(@bookmark) do |b| %>
+<h2>New Bookmark</h2>
+
+<%= simple_form_for [@list, @bookmark] do |b| %>
   <%= b.input :comment %>
   <%= b.submit %>
 <% end %>
