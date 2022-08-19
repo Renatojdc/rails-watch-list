@@ -1,10 +1,20 @@
 <h2>List details</h2>
 
 <ul>
-  <% @list.bookmarks.each do |l| %>
-  <li><%= l.comment %></li>
+  <% @list.movies.each do |l| %>
+  <li>
+    <div class="card" style="width: 18rem;">
+      <img src="<% l.poster_url %>" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><%= l.title %></h5>
+          <p class="card-text"><%= l.overview %></p>
+          <p class="card-text"><%= l.rating %></p>
+        </div>
+    </div>
+  </li>
   <% end %>
 </ul>
+
 
 
 <br>
